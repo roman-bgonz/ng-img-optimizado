@@ -5,6 +5,7 @@ import { MatGridListModule } from '@angular/material/grid-list';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
+import { NgOptimizedImage } from '@angular/common';
 
 @NgModule({
   declarations: [AppComponent],
@@ -13,6 +14,7 @@ import { HttpClientModule } from '@angular/common/http';
     MatGridListModule,
     BrowserAnimationsModule,
     HttpClientModule,
+    NgOptimizedImage,
   ],
   providers: [],
   bootstrap: [AppComponent],

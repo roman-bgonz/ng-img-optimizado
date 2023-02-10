@@ -1,5 +1,7 @@
 <mat-grid-list cols="2" rowHeight="1:1">
   <mat-grid-tile *ngFor="let product of products">
-    <img [src]="product.images[0]" [alt]="product.title" fill />
+    <!-- As user is scrolling, images are loaded and not getting all them at once, it improves performance -->
+    <img [ngSrc]="product.images[0]" [alt]="product.title" fill />
+    <!--img [src]="product.images[0]" [alt]="product.title" fill /-->
   </mat-grid-tile>
 </mat-grid-list>
